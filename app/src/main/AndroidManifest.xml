@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ichat.wannibu.ichat">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".ChatServer.MySocket"
+        android:allowBackup="true"
+        android:icon="@drawable/user"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/user"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.Welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.LogIn" />
+        <activity android:name=".Activity.WLS" />
+        <activity android:name=".Activity.SignUp" />
+        <activity android:name=".Activity.MainInterface.MainInterface" />
+        <activity android:name=".Activity.MainInterface.EachFriend" />
+        <activity android:name=".Activity.MainInterface.AddFriend" />
+        <activity android:name=".Activity.MainInterface.Chat" />
+
+        <provider
+            android:name=".ChatSQLite.MyContentProvider"
+            android:authorities="com.ichat.wannibu"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Activity.MainInterface.ShakeIt"
+            android:theme="@style/MyActionbar"/>
+    </application>
+
+</manifest>

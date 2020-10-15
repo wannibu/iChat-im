@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="toolbarStyle">@style/MyActionbar</item>
+    </style>
+
+    <style name="MyActionbar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#484848</item>
+        <item name="contentInsetStart">0dp</item>
+        <item name="android:contentInsetEnd">0dp</item>
+    </style>
+</resources>
